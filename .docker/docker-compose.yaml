@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  application:
+    image: dimmaryanto93/springboot-uploadfile
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      args:
+        - PRIVATE_REGISTRY=repository.dimas-maryanto.com:8086/
+        - JDK_VENDOR=openjdk
+        - JDK_VERSION=11-oraclelinux8
+        - JAR_FILE=springboot-k8s-nfs-0.0.1-SNAPSHOT.jar
+    ports:
+      - 8080:8080
+    environment:
+      - APPLICATION_PORT=8080
+    volumes:
+      - upload:/var/lib/spring-boot/data
+    networks:
+      - backend_net
+volumes:
+  upload:
+networks:
+  backend_net:

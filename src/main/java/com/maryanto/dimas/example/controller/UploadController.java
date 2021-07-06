@@ -21,7 +21,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/api/upload")
+@RequestMapping("/api/media")
 public class UploadController {
 
     @Value("${files.store_location}")
