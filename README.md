@@ -21,6 +21,8 @@ System Required:
 
 ## Installing NFS Server
 
+assume NFS Server will install on ip: `192.168.88.123`
+
 Di sini saya menggunakan `CentOS 7` sebagai Operation System storage-nya. Kita akan install NFS Server dan setup mounting-pointnya
 
 ```bash
