@@ -11,3 +11,6 @@ Content-Type: application/json
 
 ### get list file
 GET {{host}}:{{port}}{{contect-path}}/api/media/list
+
+### GET checkhost is available
+GET {{host}}:{{port}}{{contect-path}}/actuator/health

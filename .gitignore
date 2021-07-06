@@ -150,3 +150,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# kubernetes
+.kube/
+!.kube/*.yaml

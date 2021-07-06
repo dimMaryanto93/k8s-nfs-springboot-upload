@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.maryanto.dimas.example</groupId>
     <artifactId>springboot-k8s-nfs</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>2021.06.07.21.32-release</version>
     <name>springboot-k8s-nfs-uploadfiles</name>
     <description>Example upload file using nfs-server for k8s</description>
 
